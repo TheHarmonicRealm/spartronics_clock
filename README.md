@@ -32,9 +32,15 @@ Scrolling message is supported which is set via the mode button
 		- The date can be copied to clipboard on Mac with the command: **date +%Y:%m:%d:%H:%M:%S | pbcopy**
 	- If successful, the new time should be displayed. Otherwise, you must re-enter time setting mode and try again
 
+- To start a new countdown
+	- Add the new date to **`spartronics_clock.ino`** as the last entry in `_important_times[]` in the format
+		  `{ Year, Month, Day, Hour, Minute, Second, "Name" },`
+	- Load the code onto the Arduino. You may need to add new libraries in order for this to work.
+	- It will now be used on the Arduino in countdown mode.
+
 ## Building and Loading Code
 TBD
 
 ## Future Enhancements?
 - Use the EEPROM on the RTC board to store message strings that can be updated via the serial terminal
-- Use the EEPROM on the RTC board to store upcoming countdown dates that can be updated via the serial termanal
+- Use the EEPROM on the RTC board to store upcoming countdown dates that can be updated via the serial terminal
