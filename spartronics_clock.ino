@@ -70,7 +70,7 @@ static const char *_messages[] = {
     "Safety Glasses!",
     "More than Robots",
     "How about a scissor lift?",
-    "I buid robots...",
+    "I build robots...",
     "Do. Or do not. There is no try.",
 };
 
